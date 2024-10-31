@@ -76,3 +76,35 @@ city := "London"
 	}
 
 `
+
+## 6. Function
+Function digunakan untuk memisahkan tiap bagian dari kode agar lebih mudah untuk dibaca
+
+Contoh :
+
+`
+
+	func printFirstNames() []string {
+		firstNames := []string{}
+
+		for _, booking := range bookings {
+			firstNames = append(firstNames, booking.firstName)
+		}
+		return firstNames
+	}
+
+`
+
+## 7. Struct
+Struct adalah kumpulan dari sebuah variabel. Contoh:
+
+`
+
+	type User struct {
+		firstName       string
+		lastName        string
+		email           string
+		numberOfTickets uint
+	}
+
+`
